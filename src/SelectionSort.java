@@ -4,6 +4,7 @@ public class SelectionSort {
 
     int[] numbs;
     int length;
+    SortEnum getNameOfEnum;
 
     public SelectionSort(int[] numbers) {
 
@@ -25,6 +26,10 @@ public class SelectionSort {
             }
             swap(this.numbs, i, indexOfMin);
         }
+        int time = 0;
+
+        System.out.println("Test for Selection Sort");
+        System.out.println("TIME: " + time);
     }
 
     private void swap(int[] numbers, int i, int indexOfMin) {
